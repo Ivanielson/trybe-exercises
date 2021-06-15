@@ -7,3 +7,6 @@ O que eu vou aprender na Trybe:
 - CSS
 - SQL
 - NoSql
+- Internet
+- JavaScript
+- Python
