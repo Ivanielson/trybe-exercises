@@ -5,6 +5,8 @@ O que eu vou aprender na Trybe:
 - Git
 - HTML
 - CSS
+- SQL
+- NoSql
 - Internet
 - JavaScript
 - Python
