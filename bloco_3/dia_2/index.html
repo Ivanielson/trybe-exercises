@@ -5,27 +5,49 @@
     <title>HTML</title>
     <style>
         h1 {
-            width: 65px;
+            size: 65px;
             color: orange;
+            font-family: sans-serif;
         }
 
-        #list-color{
-            background-color: aqua;
+        body{
+            font-size: 24px;
+        }
+
+        p{
+         font-size: 3em;   
         }
 
         .back-color{
             background-color: blue;
+            font-style: italic;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: underline;
         }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .brown{
+            background-color: brown;
+        }
+
     </style>
 </head>
 <body>
     <h1>Exercícios 3.2</h1>
     <p class="back-color">Qual é a sua cor favorita?</p>
 
-    <ul class="back-color" id="list-color">
-        <li>Amarelo</li>
-        <li>Vermelho</li>
-        <li>Marrom</li>
+    <ul class="back-color">
+        <li class="yellow">Amarelo</li>
+        <li class="red">Vermelho</li>
+        <li class="brown">Marrom</li>
     </ul>
 </body>
 </html>
