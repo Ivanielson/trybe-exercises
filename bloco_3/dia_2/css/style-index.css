@@ -13,3 +13,18 @@ h1{
 .sobre{
     text-align: center;
 }
+
+.rounded-img{
+    border-radius: 40%;
+    padding: 25px 10px;
+}
+
+
+.row{
+    background-size: 1080px;
+    padding: 15px 25px;
+}
+
+h3{
+    text-align: center;
+}
