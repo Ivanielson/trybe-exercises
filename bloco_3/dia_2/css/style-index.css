@@ -1,3 +1,15 @@
 body{
     background-color: bisque;
 }
+
+h1{
+    text-align: center;
+}
+
+#pp{
+    margin-left: 100px;
+}
+
+.sobre{
+    text-align: center;
+}
