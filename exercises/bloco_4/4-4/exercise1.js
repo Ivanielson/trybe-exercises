@@ -1,4 +1,4 @@
-// Resolução exercício bloco 4.4 Exercício 1.2
+// Resolução exercício bloco 4.4 Exercício 1.3
 let info = {
   personagem: 'Margarida',
   origem: 'Pato Donald',
@@ -7,4 +7,6 @@ let info = {
 
 info['recorrente'] = true;
 
-console.table(info);
+for (let key in info) {
+  console.log(key);
+}
