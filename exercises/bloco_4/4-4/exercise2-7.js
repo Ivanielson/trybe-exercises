@@ -1,3 +1,4 @@
+// Resolução exercício bloco 4.4 Exercício 2.7
 function verificaFimPalavra(palavra1, palavra2) {
   let initValue = palavra1.length - palavra2.length;
   let newPalavra = '';
