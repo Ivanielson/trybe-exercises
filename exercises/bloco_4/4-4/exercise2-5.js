@@ -2,17 +2,17 @@
 
 function intMaxReption(lista) {
   let value;
-  let maxOcorences = 0;
+  let maxOccurrences = 0;
   for (let index = 0; index < lista.length; index += 1) {
-    let contOcorrence = 0;
+    let contOccurrences = 0;
     let item = lista[index];
     for (let cont = 1; cont <= lista.length; cont += 1) {
       if(item === lista[cont-1]){
-        contOcorrence += 1;
+        contOccurrences += 1;
       }
     }
-    if(maxOcorences < contOcorrence){
-      maxOcorences = contOcorrence;
+    if(maxOccurrences < contOccurrences){
+      maxOccurrences = contOccurrences;
       value = item;
     }
   }
