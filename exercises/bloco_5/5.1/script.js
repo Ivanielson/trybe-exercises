@@ -18,10 +18,19 @@ function alterText(text) {
   document.getElementsByClassName('title')[0].innerText = text;
 }
 
-let text = "Eu me vejo daqui a 2 anos trabalhando em um grande empresa na area de tecnologia, fazendo o que eu gosto, desenvolvendo sistemas para web.";
+// 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+function alterTextUpperCase(text) {
+  let selection = document.getElementsByTagName('p');
+  for (let index = 0; index < selection.length; index += 1) {
+    selection[index].style.textTransform = text;
+  }
+}
+
+let text = "Eu me vejo daqui a 2 anos trabalhando em uma grande empresa na area de tecnologia, fazendo o que eu gosto, desenvolvendo sistemas para web.";
 let color = 'rgb(76,164,109)';
 let color2 = '#fff';
 let textTitle = "Exercício 5.1 - JavaScript";
+let text2 = 'uppercase';
 changeParagraph(text);
 
 changeColorBackground(color);
@@ -29,3 +38,5 @@ changeColorBackground(color);
 changeColorBackground2(color2);
 
 alterText(textTitle);
+
+alterTextUpperCase(text2);
