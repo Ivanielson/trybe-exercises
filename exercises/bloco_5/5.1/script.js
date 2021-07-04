@@ -2,7 +2,13 @@ function changeParagraph(text) {
   document.getElementsByTagName('p')[1].innerText = text;
 }
 
+function changeColorBackground(color) {
+  document.getElementsByClassName('main-content')[0].style.backgroundColor = color;
+}
+
 let text = "Eu me vejo daqui a 2 anos trabalhando em um grande empresa na area de tecnologia, fazendo o que eu gosto, desenvolvendo sistemas para web.";
+let color = 'rgb(76,164,109)';
 
 changeParagraph(text);
 
+changeColorBackground(color);
