@@ -9,6 +9,10 @@ let divClass = divPrime.className = 'main-content';
 document.body.appendChild(divPrime);
 
 // Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+let divChild = document.createElement('div');
+let divClassChild = divChild.className = 'center-content';
+document.querySelector('.main-content').appendChild(divChild);
+
 // Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
 // Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
 // Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
