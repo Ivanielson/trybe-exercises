@@ -76,4 +76,9 @@ document.querySelector('.right-content').style.margin = 'auto';
 document.querySelector('.center-content').parentElement.style.backgroundColor = 'green';
 
 // 6 - Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
-
+let lis = document.querySelectorAll('li');
+for (let li of lis) {
+  if(li.innerText === '9' || li.innerText === '10'){
+    li.parentElement.removeChild(li);
+  }
+}
