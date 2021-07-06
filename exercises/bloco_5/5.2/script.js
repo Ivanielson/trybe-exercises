@@ -44,3 +44,11 @@ for (let index = 1; index < 11; index += 1) {
 }
 
 // 9 - Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+let numberTagsH3 = 3;
+while (numberTagsH3 > 0) {
+  let h3Child = document.createElement('h3');
+  let h3Content = h3Child.innerText = "Tag 'H3' criada com sucesso!";
+  document.querySelector('.main-content').appendChild(h3Child);
+  numberTagsH3 -= 1;
+}
+
