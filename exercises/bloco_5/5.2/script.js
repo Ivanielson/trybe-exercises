@@ -35,4 +35,12 @@ let imgSrcPrime = imgPrime.src = 'https://picsum.photos/200';
 document.querySelector('.left-content').appendChild(imgPrime);
 
 // 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+let ulPrime = document.createElement('ul');
+document.querySelector('.right-content').appendChild(ulPrime);
+for (let index = 1; index < 11; index += 1) {
+  let liPrime = document.createElement('li');
+  let liValue = liPrime.innerText = index;
+  document.querySelector('.right-content ul').appendChild(liPrime);
+}
+
 // 9 - Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
