@@ -61,12 +61,12 @@ tagH1.className = 'title';
 // 2 - Adicione a classe description nas 3 tags h3 criadas;
 let tagsH3Selection = document.querySelectorAll('.main-content h3');
 for (let index = 0; index < tagsH3Selection.length; index += 1) {
-  tagsH3Selection[index].className = 'description';  
+  tagsH3Selection[index].className = 'description';
 }
 
 // 3 - Remova o div criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
 let divSlectionFather = document.querySelector('.left-content').parentElement;
-let divSelection =  document.querySelector('.left-content');
+let divSelection = document.querySelector('.left-content');
 divSlectionFather.removeChild(divSelection);
 
 // 4 - Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
@@ -78,7 +78,7 @@ document.querySelector('.center-content').parentElement.style.backgroundColor = 
 // 6 - Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
 let lis = document.querySelectorAll('li');
 for (let li of lis) {
-  if(li.innerText === '9' || li.innerText === '10'){
+  if (li.innerText === '9' || li.innerText === '10') {
     li.parentElement.removeChild(li);
   }
 }
