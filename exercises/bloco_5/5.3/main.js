@@ -34,15 +34,14 @@ function daysList(list) {
   }
 }
 
+daysList(dezDaysList);
 
-function addButton(feriados) {
+function addButton(holiday) {
   let btn = document.createElement('button');
-  btn.innerText = 'Feriados';
-  btn.setAttribute('name',feriados);
+  btn.innerText = holiday;
   btn.setAttribute('id', 'btn-holiday');
   buttonsContainer.appendChild(btn);
 }
-daysList(dezDaysList);
 
 addButton('Feriados');
 
@@ -62,4 +61,11 @@ buttonFeriados.addEventListener('click', function (event) {
   });
 });
 
+function addButtonFriday(friday) {
+  let btn = document.createElement('button');
+  btn.setAttribute('id', 'btn-friday');
+  btn.innerText = friday;
+  buttonsContainer.appendChild(btn);
+}
 
+addButtonFriday('Sexta-feira');
