@@ -42,7 +42,24 @@ function addButton(feriados) {
   btn.setAttribute('id', 'btn-holiday');
   buttonsContainer.appendChild(btn);
 }
-
 daysList(dezDaysList);
 
 addButton('Feriados');
+
+const buttonFeriados = document.querySelector('#btn-holiday');
+
+buttonFeriados.addEventListener('click', function (event) {
+  let daysHoliday = document.querySelectorAll('.holiday');
+  for (const day of daysHoliday) {
+    day.setAttribute('style', 'background: green');
+  }
+  
+  buttonFeriados.addEventListener('click', function () {
+    let daysHoliday = document.querySelectorAll('.holiday');
+    for (const day of daysHoliday) {
+      day.setAttribute('style', 'background: rgb(238,238,238)');
+    }
+  });
+});
+
+
