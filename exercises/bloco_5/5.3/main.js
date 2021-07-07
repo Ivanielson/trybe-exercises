@@ -23,11 +23,11 @@ function daysList(list) {
     let li = document.createElement('li');
     if (value === 24 || value === 31) {
       li.className = 'day holiday';
-    }else if (value === 4 || value === 11 || value === 18) {
+    } else if (value === 4 || value === 11 || value === 18) {
       li.className = 'day friday';
-    }else if (value === 25) {
+    } else if (value === 25) {
       li.className = 'day friday holiday';
-    }else {
+    } else {
       li.className = 'day';
     }
     ulDays.appendChild(li).innerText = value;
@@ -45,18 +45,18 @@ function addButton(holiday) {
 
 addButton('Feriados');
 
-const buttonFeriados = document.querySelector('#btn-holiday');
+const buttonHoliday = document.querySelector('#btn-holiday');
 
-buttonFeriados.addEventListener('click', function (event) {
+buttonHoliday.addEventListener('click', function () {
   let daysHoliday = document.querySelectorAll('.holiday');
   for (const day of daysHoliday) {
     day.setAttribute('style', 'background: green');
   }
-  
-  buttonFeriados.addEventListener('click', function () {
+
+  buttonHoliday.addEventListener('click', function () {
     let daysHoliday = document.querySelectorAll('.holiday');
     for (const day of daysHoliday) {
-      day.setAttribute('style', 'background: rgb(238,238,238)');
+      day.removeAttribute('style');
     }
   });
 });
@@ -69,3 +69,21 @@ function addButtonFriday(friday) {
 }
 
 addButtonFriday('Sexta-feira');
+
+const buttonFriday = document.querySelector('#btn-friday');
+
+buttonFriday.addEventListener('click', function (event) {
+  let daysFriday = document.querySelectorAll('.friday');
+  let dayNumber = [];
+  for (const day of daysFriday) {
+    dayNumber.push(day.innerText);
+    day.innerText = 'Hoje é sexta- feira!!!';
+  }
+  buttonFriday.addEventListener('click', function () {
+    let cont = 0;
+    for (const day of daysFriday) {
+      day.innerText = dayNumber[cont];
+      cont += 1;
+    }
+  });
+});
