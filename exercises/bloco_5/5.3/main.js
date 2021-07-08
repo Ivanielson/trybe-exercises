@@ -69,7 +69,7 @@ buttonHoliday.addEventListener('click', function () {
     let evento = day.style.background;
     switch (evento) {
       case 'green':
-        day.removeAttribute('style');
+        day.setAttribute('style', 'background: rgb(238,238,238)');
         break;
     
       default:
@@ -134,3 +134,11 @@ ulDays.addEventListener('mouseover', function (event) {
 // Exercício 7:
 // Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+
+const divMyTask = document.querySelector('.my-tasks');
+
+function addTask(task) {
+  let elementTask = document.createElement('span');
+  elementTask.innerText = task + '\n';
+  divMyTask.appendChild(elementTask);
+}
