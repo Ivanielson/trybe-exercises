@@ -17,3 +17,21 @@
   padding: 5px;
   font-size: 14px;
 }
+
+.line-style textarea {
+  width: 98%;
+  height: 50px;
+  margin: 8px auto;
+  border: 1px solid silver;
+  border-radius: 3px;
+  padding: 3px;
+  font-size: 14px;
+  resize: none;
+}
+
+fieldset {
+  width: 80%;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 5px;
+}
