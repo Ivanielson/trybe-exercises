@@ -142,7 +142,7 @@ function addTask(task) {
   elementTask.innerText = task + '\n';
   divMyTask.appendChild(elementTask);
 }
-
+addTask('Projeto - Art Pixels');
 // Exercício 8:
 // Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
 // O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
@@ -154,3 +154,16 @@ function addLegend(text) {
   newDiv.setAttribute('style','background: ' + text);
   divMyTask.appendChild(newDiv);
 }
+addLegend('green');
+
+// Exercício 9:
+// Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
+// Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
+
+const divsTask = document.getElementsByClassName('task');
+
+// divsTask.addEventListener('click', function () {
+//   for (const div of divsAll) {
+//     div.setAttribute('class', 'task selected');
+//   }
+// });
