@@ -7,15 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercícios Bloco 6.1</title>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <script src="/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+  <script src="dist/js/DatePickerX.min.js"></script>
 </head>
 
 <body>
-  <main>
+  <main class="container">
     <header id="header">
-      <h1>Curriculum</h1>
+      <h1 class="display-3">Curriculum</h1>
     </header>
-    <section id="section-form">
+    <section>
       <form action="" name="curriculum" method="GET">
         <fieldset class="form-control mb-3">
           <legend>Dados Pessoais</legend>
@@ -50,14 +51,17 @@
             </select>
           </div>
 
-          <div class="mb-1">
-            <p>Tipo de Moradia</p>
-            <label for="input-casa" class="form-check-label">Casa</label>
+          
+            <p class="lead">Tipo de Moradia</p>
+            <div class="form-check mb-1">
+              <label for="input-casa" class="form-check-label">Casa</label>
               <input type="radio" class="form-check-input" name="moradia" id="input-casa" value="casa">
+            </div>
 
-            <label for="input-apartamento" class="form-check-label">Apartamento</label>
-            <input type="radio" class="form-check-input" name="moradia" id="input-apartamento" value="apartamento">
-          </div>
+            <div class="form-check mb-1">
+              <label for="input-apartamento" class="form-check-label">Apartamento</label>
+              <input type="radio" class="form-check-input" name="moradia" id="input-apartamento" value="apartamento">
+            </div>
 
         </fieldset>
 
@@ -93,6 +97,7 @@
     <div>
     </div>
   </main>
+<script src="/js/bootstrap.min.js"></script>
 <script src="/js/script.js"></script>
 </body>
 

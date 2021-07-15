@@ -15,3 +15,5 @@ function generationSelect() {
 }
 
 generationSelect();
+
+let dataInit =  document.getElementById('input-date-start').DatePickerX.init();
