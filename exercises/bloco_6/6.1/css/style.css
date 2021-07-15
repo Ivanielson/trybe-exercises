@@ -35,3 +35,10 @@ fieldset {
   padding: 30px;
   border-radius: 5px;
 }
+
+.button-submit button {
+  margin-left: 70px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 3px;
+}

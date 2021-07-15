@@ -15,7 +15,7 @@
       <h1>Curriculum</h1>
     </header>
     <section id="section-form">
-      <form action="" method="POST">
+      <form action="" name="curriculum" method="GET">
         <fieldset>
           <legend>Dados Pessoais</legend>
           <div class="line-style">
@@ -51,18 +51,17 @@
           <div class="line-style">
             <label for="select-estado">Estado</label>
             <select name="estado" id="select-estado" required>
-              <option value="">Selecione um Estado</option>
             </select>
           </div>
 
           <div class="line-style">
             <p>Tipo de Moradia</p>
             <label for="input-casa">
-              <input type="radio" name="tipo-moradia" id="input-casa" value="casa">Casa
+              <input type="radio" name="moradia" id="input-casa" value="casa">Casa
             </label>
 
             <label for="input-apartamento">
-              <input type="radio" name="tipo-moradia" id="input-apartamento" value="apartamento">Apartamento
+              <input type="radio" name="moradia" id="input-apartamento" value="apartamento">Apartamento
             </label>
           </div>
 
@@ -73,7 +72,7 @@
 
           <div class="line-style">
             <label for="input-resume-curriculo">Resumo do Currículo</label>
-            <textarea name="resume-curriculo" id="input-resume-curriculo" maxlength="1000" required></textarea>
+            <textarea name="curriculo" id="input-resume-curriculo" maxlength="1000" required></textarea>
           </div>
 
           <div class="line-style">
@@ -83,16 +82,21 @@
 
           <div class="line-style">
             <label for="input-description-cargo">Descrição do cargo</label>
-            <input type="text" name="description-cargo" id="input-description-cargo" maxlength="500" required>
+            <input type="text" name="description" id="input-description-cargo" maxlength="500" required>
           </div>
 
           <div class="line-style">
             <label for="input-date-start">Data de início</label>
-            <input type="text" name="date-start" id="input-date-start" required>
+            <input type="text" name="start" id="input-date-start" required>
           </div>
         </fieldset>
+        <div class="button-submit">
+          <button id="submit">Enviar</button>
+        </div>
       </form>
     </section>
+    <div class="result-form">
+    </div>
   </main>
   <script src="/js/script.js"></script>
 </body>
