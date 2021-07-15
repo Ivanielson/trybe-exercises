@@ -52,7 +52,6 @@ function returnForm() {
 
 selectButton.addEventListener('click', function (event) {
   event.preventDefault();
-  verificaData();
   const result = returnForm();
   for (const value of result) {
     const newParagraph = document.createElement('p');
