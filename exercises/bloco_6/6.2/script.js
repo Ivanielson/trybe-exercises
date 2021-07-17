@@ -17,105 +17,104 @@ function generationSelect() {
   }
 }
 
+
 let dataInit =  document.getElementById('input-date-start').DatePickerX.init();
+window.onload = () => {
 
-window.onload = function () {
   generationSelect();
-
-  new JustValidate('.my-form');
-  // new JustValidate('.my-form', {
-  //   rules: {
-  //     name: {
-  //       maxLength: 40,
-  //       required: true
-  //     },
-  //     email: {
-  //       maxLength: 50,
-  //       email: true,
-  //       required: true
-  //     },
-  //     cpf: {
-  //       maxLength: 11,
-  //       required: true
-  //     },
-  //     adress: {
-  //       maxLength: 200,
-  //       required: true
-  //     },
-  //     city: {
-  //       maxLength: 28,
-  //       required: true
-  //     },
-  //     state: {
-  //       required: true
-  //     },
-  //     radio: {
-  //       required: true
-  //     },
-  //     resume: {
-  //       maxLength: 1000,
-  //       required: true
-  //     },
-  //     cargo: {
-  //       maxLength: 40,
-  //       required: true
-  //     },
-  //     descriprion: {
-  //       maxLength: 500,
-  //       required: true
-  //     },
-  //     date: {
-  //       required: true
-  //     }
-  //   },
-  //   messages: {
-  //     name: {
-  //       maxLength: 'O limite é de 40 caracteres.',
-  //       required: 'O campo Nome é obrigatório'
-  //     },
-  //     email: {
-  //       maxLength: 'O limite é de 50 caracteres.',
-  //       email: 'O email digitado não é válido',
-  //       required: 'O campo E-mail é obrigatório'
-  //     },
-  //     cpf: {
-  //       maxLength: 'O limite é de 11 caracteres.',
-  //       required: 'O campo CPF é obrigatório'
-  //     },
-  //     adress: {
-  //       maxLength: 'O limite é de 200 caracteres.',
-  //       required: 'O campo Endereço é obrigatório'
-  //     },
-  //     city: {
-  //       maxLength: 'O limite é de 28 caracteres.',
-  //       required: 'O campo Cidade é obrigatório'
-  //     },
-  //     state: {
-  //       required: 'O campo Estado é obrigatório'
-  //     },
-  //     radio: {
-  //       required: 'Escolha uma das opções é obrigatório'
-  //     },
-  //     resume: {
-  //       maxLength: 'O limite é de 1000 caracteres.',
-  //       required: 'O campo Resumo do Currículo é obrigatório'
-  //     },
-  //     cargo: {
-  //       maxLength: 'O limite é de 40 caracteres.',
-  //       required: 'O campo Cargo é obrigatório'
-  //     },
-  //     description: {
-  //       maxLength: 'O limite é de 500 caracteres.',
-  //       required: 'O campo Descrição do cargo é obrigatório'
-  //     },
-  //     date: {
-  //       required: 'O campo Data de inicío é obrigatório'
-  //     },
-  //   },
-  //   submitHandler: function (form, value) {
-  //     console.log(form, value);
-  //   },
-  // });
+  new JustValidate('.my-form', {
+    rules: {
+      name: {
+        required: true,
+        maxLength: 40
+      },
+      email: {
+        required: true,
+        email: true,
+        maxLength: 50
+      },
+      cpf: {
+        required: true,
+        maxLength: 11,
+      },
+      adress: {
+        required: true,
+        maxLength: 200
+      },
+      city: {
+        required: true,
+        maxLength: 28
+      },
+      state: {
+        required: true
+      },
+      radio: {
+        required: true
+      },
+      resume: {
+        required: true,
+        maxLength: 1000
+      },
+      cargo: {
+        required: true,
+        maxLength: 40
+      },
+      description: {
+        required: true,
+        maxLength: 500
+      },
+      date: {
+        required: true
+      }
+    },
+    messages: {
+      name: {
+        maxLength: 'O limite é de 40 caracteres.',
+        required: 'O campo Nome é obrigatório'
+      },
+      email: {
+        maxLength: 'O limite é de 50 caracteres.',
+        email: 'O email digitado não é válido',
+        required: 'O campo E-mail é obrigatório'
+      },
+      cpf: {
+        maxLength: 'O limite é de 11 caracteres.',
+        required: 'O campo CPF é obrigatório'
+      },
+      adress: {
+        maxLength: 'O limite é de 200 caracteres.',
+        required: 'O campo Endereço é obrigatório'
+      },
+      city: {
+        maxLength: 'O limite é de 28 caracteres.',
+        required: 'O campo Cidade é obrigatório'
+      },
+      state: {
+        required: 'O campo Estado é obrigatório'
+      },
+      radio: {
+        required: 'Escolha uma das opções é obrigatório'
+      },
+      resume: {
+        maxLength: 'O limite é de 1000 caracteres.',
+        required: 'O campo Resumo do Currículo é obrigatório'
+      },
+      cargo: {
+        maxLength: 'O limite é de 40 caracteres.',
+        required: 'O campo Cargo é obrigatório'
+      },
+      description: {
+        maxLength: 'O limite é de 500 caracteres.',
+        required: 'O campo Descrição do cargo é obrigatório'
+      },
+      date: {
+        required: 'O campo Data de inicío é obrigatório'
+      },
+    },
+    submitHandler: function (form, value) {
+      console.log(form, value);
+    },
+  });
 }
 
 // function returnForm() {

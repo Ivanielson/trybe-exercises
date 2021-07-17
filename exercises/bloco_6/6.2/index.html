@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercícios Bloco 6.1</title>
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
   <script src="dist/js/DatePickerX.min.js"></script>
-  <script src="script.js" type="module" async></script>
 </head>
 
 <body>
@@ -19,78 +19,72 @@
     </header>
     <section>
       <form action="" class="my-form" name="curriculum" method="GET">
-        <fieldset class="form-control mb-3">
-          <legend>Dados Pessoais</legend>
-          <div class="mb-1">
+
+          <div class="container mb-1">
             <label for="input-nome" class="form-label">Nome:</label>
-              <input type="text" class="form-control" data-valitation-filed="name" name="nome" id="input-nome">
+              <input type="text" class="form-control" data-validate-field="name" name="nome" id="input-nome">
           </div>
 
-          <div class="mb-1">
+          <div class="container mb-1">
             <label for="input-email">E-mail:</label>
-              <input type="text" class="form-control" data-valitation-filed="email" name="email" id="input-email">
+              <input type="text" class="form-control" data-validate-field="email" name="email" id="input-email">
           </div>
 
-          <div class="mb-1">
+          <div class="container mb-1">
             <label for="input-cpf">CPF:</label>
-              <input type="text" class="form-control" data-valitation-filed="cpf" name="cpf" id="input-cpf" maxlength="11" required>
+              <input type="text" class="form-control" data-validate-field="cpf" name="cpf" id="input-cpf">
           </div>
 
-          <div class="mb-1">
+          <div class="container mb-1">
             <label for="input-endereco">Endereço:</label>
-              <input type="text" class="form-control" data-valitation-filed="adress" name="endereco" id="input-endereco" maxlength="200" required>
+              <input type="text" class="form-control" data-validate-field="adress" name="endereco" id="input-endereco">
           </div>
 
-          <div class="mb-1">
+          <div class="container mb-1">
             <label for="input-cidade">Cidade:</label>
-              <input type="text" class="form-control" data-valitation-filed="city" name="cidade" id="input-cidade" maxlength="28" required>
+              <input type="text" class="form-control" data-validate-field="city" name="cidade" id="input-cidade">
           </div>
 
-          <div class="mb-1">
+          <div class="container mb-1">
             <label for="select-estado">Estado</label>
-            <select class="form-select" data-valitation-filed="state" name="estado" id="select-estado" required>
+            <select class="form-select" data-validate-field="state" name="estado" id="select-estado">
+              <option value=""></option>
             </select>
           </div>
 
-          
             <p class="lead">Tipo</p>
-            <div class="form-check mb-1">
+            <div class="container form-check mb-1">
               <label for="input-casa" class="form-check-label">Casa</label>
-              <input type="radio" data-valitation-filed="radio" class="form-check-input" name="moradia" id="input-casa" value="casa">
+              <input type="radio" data-validate-field="radio" class="form-check-input" name="moradia" id="input-casa" value="casa">
             </div>
 
-            <div class="form-check mb-1">
+            <div class="container form-check mb-1">
               <label for="input-apartamento" class="form-check-label">Apartamento</label>
-              <input type="radio" data-valitation-filed="radio" class="form-check-input" name="moradia" id="input-apartamento" value="apartamento">
+              <input type="radio" data-validate-field="radio" class="form-check-input" name="moradia" id="input-apartamento" value="apartamento">
             </div>
 
-        </fieldset>
-
-        <fieldset class="form-control mb-3">
-          <legend>Dados - Último Emprego</legend>
-
-          <div class="mb-1">
+          <div class="container mb-1">
             <label for="input-resume-curriculo">Resumo do Currículo</label>
-            <textarea class="form-control" data-valitation-filed="resume" name="curriculo" id="input-resume-curriculo" maxlength="1000" required></textarea>
+            <textarea class="form-control" data-validate-field="resume" name="curriculo" id="input-resume-curriculo"></textarea>
           </div>
 
-          <div class="md-1">
+          <div class="container md-1">
             <label for="input-cargo">Cargo</label>
-            <input type="text" data-valitation-filed="cargo" class="form-control" name="cargo" id="input-cargo" maxlength="40" required>
+            <input type="text" data-validate-field="cargo" class="form-control" name="cargo" id="input-cargo">
           </div>
 
-          <div class="md-1">
+          <div class="container md-1">
             <label for="input-description-cargo">Descrição do cargo</label>
-            <input type="text" data-valitation-filed="desrcripttion" class="form-control" name="description" id="input-description-cargo" maxlength="500" required>
+            <input type="text" data-validate-field="description" class="form-control" name="description" id="input-description-cargo">
           </div>
 
-          <div class="md-1">
+          <div class="container md-3">
             <label for="input-date-start">Data de início</label>
-            <input type="text" class="form-control" data-valitation-filed="date" name="start" id="input-date-start" required>
-          </div>
-        </fieldset>
-        <div class="md-1">
-          <button type="submit" class="btn btn-dark" id="submit">Enviar</button>
+            <input type="text" class="form-control" data-validate-field="date" name="start" id="input-date-start">
+          </div><br>
+
+        <div class="container md-1">
+          <button type="submit" class="btn btn-dark">Enviar</button>
           <button type="reset" class="btn btn-dark">Limpar</button>
         </div>
       </form>
@@ -99,8 +93,9 @@
     <div class="result-form">
     </div>
   </main>
-<script src="/js/bootstrap.min.js"></script>
-<!-- <script src="/node_modules/just-validate/dist/js/just-validate.min.js"></script> -->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js" type="module"></script>
 </body>
 
 </html>
