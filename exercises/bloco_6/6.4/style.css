@@ -28,7 +28,9 @@ body {
 .menu-container ul {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  align-self: center;
+  padding: 0 30px ;
+  margin: 0 30px;
 }
 
 .menu-container li {
@@ -41,4 +43,11 @@ body {
 
 .header-container > .logo-container {
   order: -1;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-container ul {
+    width: 750px;
+    justify-content: space-between;
+  }
 }
