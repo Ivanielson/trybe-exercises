@@ -36,10 +36,14 @@ const order = {
 
 const customerInfo = (order) => {
   // Adicione abaixo as informações necessárias.
+  const name = order.name;
+  const telefone = order.phoneNumber;
+  const endereco = Object.values(order.address);
+  return `Olá Ana Silveira, entrega para: ${name}, Telefone: ${telefone}, ${endereco}`;
 
 }
 
-customerInfo(order);
+console.log(customerInfo(order));
 
 const orderModifier = (order) => {
   // Adicione abaixo as informações necessárias.
