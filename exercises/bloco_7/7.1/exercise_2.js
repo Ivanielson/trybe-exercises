@@ -24,3 +24,14 @@ const countWordSize = (frase) => {
 }
 
 console.log(countWordSize('Antônio foi no banheiro e não sabemos o que aconteceu'));
+
+const getButton = document.querySelector('#button');
+const getParagraph = document.querySelector('#count');
+
+getButton.addEventListener('click', (event) => {
+  let clickCount = parseInt(getParagraph.innerHTML);
+  if (event.target) {
+    clickCount += 1;
+    getParagraph.innerHTML = clickCount;
+  }
+});
