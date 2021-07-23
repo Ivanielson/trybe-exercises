@@ -39,7 +39,8 @@ const customerInfo = (order) => {
   const name = order.name;
   const telefone = order.phoneNumber;
   const endereco = Object.values(order.address);
-  return `Olá Ana Silveira, entrega para: ${name}, Telefone: ${telefone}, ${endereco}`;
+  const receptor = order.order.delivery.deliveryPerson;
+  return `Olá ${receptor}, entrega para: ${name}, Telefone: ${telefone}, ${endereco}`;
 
 }
 
