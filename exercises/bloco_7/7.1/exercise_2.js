@@ -35,3 +35,19 @@ getButton.addEventListener('click', (event) => {
     getParagraph.innerHTML = clickCount;
   }
 });
+
+const textPiloto = 'Olá, me chamo x e agora eu sou Tryber!';
+
+const validationX = (text) => {
+  const list = textPiloto.split(' ');
+  let result = '';
+  const pos = list.indexOf('x');
+  list[pos] = text;
+  for (const value of list) {
+    result += ` ${value}`
+  }
+  return result.trim();
+}
+
+console.log(validationX('Ivanielson'));
+const skills = ['HTML', 'JavaScript', 'CSS', 'BootStrap', 'React'];
