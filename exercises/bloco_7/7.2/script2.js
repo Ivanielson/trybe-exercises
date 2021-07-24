@@ -35,3 +35,7 @@ console.log(getSizeObject(lesson2));
 // Função lista todos os valores de Objeto;
 const getValuesObject = (obj) => Object.values(obj);
 console.log(getValuesObject(lesson3));
+
+// Criando um novo Objeto com os já existentes;
+const allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
+console.log(allLessons);
