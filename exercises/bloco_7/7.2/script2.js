@@ -52,3 +52,7 @@ const numberStudents = (obj) => {
 }
 
 console.log(numberStudents(allLessons));
+
+// Função retorna valor de acordo com a posição do Objeto passada no parametro;
+const getValuePosition = (obj, num) => Object.values(obj)[num];
+console.log(getValuePosition(lesson1, 2));
