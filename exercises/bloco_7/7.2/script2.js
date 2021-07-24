@@ -25,9 +25,13 @@ console.table(lesson2);
 
 // Função lista todas as chaves de um Objeto;
 const getKeysObject = (obj) => Object.keys(obj);
-console.log(getKeysObject(lesson3));
+console.log(getKeysObject(lesson1));
 
 
 // Função para verificar tamanho de um Objeto;
 const getSizeObject = (obj) => Object.entries(obj).length;
 console.log(getSizeObject(lesson2));
+
+// Função lista todos os valores de Objeto;
+const getValuesObject = (obj) => Object.values(obj);
+console.log(getValuesObject(lesson3));
