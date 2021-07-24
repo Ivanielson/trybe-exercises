@@ -55,4 +55,17 @@ console.log(numberStudents(allLessons));
 
 // Função retorna valor de acordo com a posição do Objeto passada no parametro;
 const getValuePosition = (obj, num) => Object.values(obj)[num];
-console.log(getValuePosition(lesson1, 2));
+console.log(getValuePosition(lesson1, 0));
+
+// Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
+// Função verifica se existe uma chave e valor no Objeto;
+const validationKeyValue = (obj, key, value) => {
+  const chave = obj.hasOwnProperty(key);
+  const valor = obj[key];
+  if (chave && valor === value) {
+    return true;
+  }
+  return false;
+}
+
+console.log(validationKeyValue(lesson2, 'professor', 'Carlos'));
