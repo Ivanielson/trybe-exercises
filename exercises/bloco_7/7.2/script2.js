@@ -18,7 +18,11 @@ const lesson3 = {
   turno: 'noite',
 };
 
+// Função adiciona uma propriedade a um Objeto;
 const setProperties = (obj, key, value) => obj[key] = value;
-
 setProperties(lesson2, 'Turno', 'Manhã');
 console.table(lesson2);
+
+// Função lista todas as chaves de um Objeto;
+const getKeysObject = (obj) => Object.keys(obj);
+console.log(getKeysObject(lesson3));
