@@ -39,3 +39,16 @@ console.log(getValuesObject(lesson3));
 // Criando um novo Objeto com os já existentes;
 const allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
 console.log(allLessons);
+
+// Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors
+// Função retorne o número total de estudantes em todas as aulas;
+const numberStudents = (obj) => {
+  const getProperties = Object.getOwnPropertyDescriptors(obj);
+  const lesson1 = getProperties.lesson1.value.numeroEstudantes;
+  const lesson2 = getProperties.lesson2.value.numeroEstudantes;
+  const lesson3 = getProperties.lesson3.value.numeroEstudantes;
+  const numberStudents = lesson1 + lesson2 + lesson3;
+  return numberStudents;
+}
+
+console.log(numberStudents(allLessons));
