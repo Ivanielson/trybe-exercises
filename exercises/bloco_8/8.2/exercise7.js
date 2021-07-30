@@ -66,21 +66,21 @@ const expectedResult = false;
 
 function authorUnique() {
   // escreva seu código aqui
-  let years = [];
-  books.forEach((element) => years.push(element.author.birthYear));
+  let result = true;
   let count = 0;
-  for (const year of years) {
-    for (const value of years) {
-      if (year === value) {
+  books.forEach((element) => {
+    const year = element.author.birthYear;
+    books.forEach((item) => {
+      if (year === item.author.birthYear) {
         count += 1
       }
-    }
+    });
     if (count > 1) {
-      return false;
+      result = false;
     }
     count = 0;
-  }
-  return true;
+  });
+  return result;
 }
 
 assert.strictEqual(authorUnique(), expectedResult);
