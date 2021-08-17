@@ -12,5 +12,5 @@ describe('Teste da função myRemove - Exercício 2', () => {
   it('Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado [1, 2, 3, 4]', () => {
     expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
   });
-  
+
 });
