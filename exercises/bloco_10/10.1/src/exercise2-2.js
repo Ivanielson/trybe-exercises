@@ -16,5 +16,4 @@ const techList = (tech, name) => {
   return obj;
 }
 
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 module.exports = techList;
