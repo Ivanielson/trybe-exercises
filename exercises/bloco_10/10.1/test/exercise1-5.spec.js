@@ -1,4 +1,4 @@
-const { obj1, obj2, obj3} = require('./exercise1-5');
+const { obj1, obj2, obj3} = require('../src/exercise1-5');
 
 describe('Compara Objetos', () => {
   it('Compare dois objetos para verificar se são idênticos ou não', () => {

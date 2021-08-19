@@ -1,4 +1,4 @@
-const { encode, decode } = require('./exercise2');
+const { encode, decode } = require('../src/exercise2-1');
 
 describe('Play grounds Functions - encode e decode', () => {
   it('Verifica se as funções existem', () => {
