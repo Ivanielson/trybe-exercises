@@ -1,11 +1,12 @@
-import Pokemon from './componentes/Pokemon';
 import data from './data';
-import './App.css';
+import Pokedex from './componentes/Pokedex';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
-    <main>
-      <Pokemon pokemon={data[0]}/>
+    <main className='container'>
+      <h1 className='text-center display-6'> Lista de Pokemons </h1>
+      <Pokedex pokemons={ data }/>
     </main>
   );
 }
