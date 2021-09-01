@@ -6,14 +6,16 @@ class Pokemon extends Component {
   render() {
     const { name, type, averageWeight: { value, measurementUnit }, image, moreInfo } = this.props.pokemon;
     return (
-      <div className='card m-3 mb-4 shadow rounded' Style='width: 14rem;'>
-        <img src={image} alt={`Imagem do ${name}`} className='card-img-top' />
+      <div className='col-4'>
+        <div className='card mb-4 shadow' Style='width: 16rem;'>
+        <img src={image} alt={`Imagem do ${name}`} className='card-img-top bg-warning bg-gradient bg-opacity-50' />
         <div className='card-body'>
-          <p className='card-text'>{ name }</p>
-          <p className='card-text'>{ type }</p>
+          <p className='card-text'>Name: { name }</p>
+          <p className='card-text'>Type: { type }</p>
           <p className='card-text'>Average Weight: { value }{ measurementUnit }</p>
-          <a target='_blank' rel="noreferrer" href={ moreInfo } className='btn btn-primary'> Descrição </a>
+          <a target='_blank' rel="noreferrer" href={ moreInfo } className='btn btn-warning'> Descrição </a>
         </div>
+      </div>
       </div>
     );
   }
