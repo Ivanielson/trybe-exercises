@@ -10,9 +10,9 @@ class Pokemon extends Component {
         <div className='card mb-4 shadow' Style='width: 16rem;'>
         <img src={image} alt={`Imagem do ${name}`} className='card-img-top bg-warning bg-gradient bg-opacity-50' />
         <div className='card-body'>
-          <p className='card-text'>Name: { name }</p>
-          <p className='card-text'>Type: { type }</p>
-          <p className='card-text'>Average Weight: { value }{ measurementUnit }</p>
+          <p className='card-text fs-5'>Name: { name }</p>
+          <p className='card-text fs-5'>Type: { type }</p>
+          <p className='card-text fs-5'>Average Weight: { value }{ measurementUnit }</p>
           <a target='_blank' rel="noreferrer" href={ moreInfo } className='btn btn-warning'> Descrição </a>
         </div>
       </div>
