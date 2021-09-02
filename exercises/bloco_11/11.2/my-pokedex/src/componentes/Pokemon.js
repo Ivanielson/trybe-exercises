@@ -7,7 +7,7 @@ class Pokemon extends Component {
     const { name, type, averageWeight: { value, measurementUnit }, image, moreInfo } = this.props.pokemon;
     return (
       <div className='col-4'>
-        <div className='card mb-4 shadow' Style='width: 16rem;'>
+        <div className='card p-2 mb-4 shadow' Style='width: 16rem;'>
         <img src={image} alt={`Imagem do ${name}`} className='card-img-top bg-warning bg-gradient bg-opacity-50' />
         <div className='card-body'>
           <p className='card-text fs-5'>Name: { name }</p>
