@@ -4,7 +4,7 @@ import Fieldset from './Fieldset';
 class Form extends React.Component {
   render() {
     return (
-      <section>
+      <section className="container">
         <h1>Formulário</h1>
         <form>
           <Fieldset />
