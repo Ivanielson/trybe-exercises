@@ -1,4 +1,4 @@
-// const query = (element) => document.querySelector(element);
+const query = (element) => document.querySelector(element);
 
 const ESTADO_INICIAL = {
   colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
@@ -20,3 +20,11 @@ const reducer = (state = ESTADO_INICIAL, action) => {
 }
 
 const store = Redux.createStore(reducer);
+
+query('#previous').addEventListener('click', () => {
+  store.dispatch({ type: previousColor });
+});
+
+query('#next').addEventListener('click', () => {
+  store.dispatch({ type: nextColor });
+});
