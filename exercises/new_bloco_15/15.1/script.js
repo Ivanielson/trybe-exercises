@@ -3,8 +3,11 @@ const ESTADO_INICIAL = {
   index: 0,
 };
 
-const reducer = (state) => {
-  return state;
+const reducer = (state, action) => {
+  switch (action.type) {
+    default:
+      return state;
+  }
 }
 
 const store = Redux.createStore(reducer);
