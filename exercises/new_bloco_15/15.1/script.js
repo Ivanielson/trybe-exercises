@@ -3,7 +3,7 @@ const ESTADO_INICIAL = {
   index: 0,
 };
 
-const reducer = (state, action) => {
+const reducer = (state = ESTADO_INICIAL, action) => {
   switch (action.type) {
     default:
       return state;
