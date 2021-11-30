@@ -12,7 +12,19 @@ services:
       database__connection__user: root
       database__connection__password: example
       database__connection__database: ghost
+    networks:
+      - my-network
   db:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: "${database__connection__password}"
+      MYSQL_ROOT_PASSWORD: example
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - my-network
+
+volumes:
+  db-data:
+
+networks:
+  my-network:
