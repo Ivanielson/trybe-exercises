@@ -1,5 +1,5 @@
--- 1.  Utilizando o INNER JOIN , encontre as vendas nacionais ( domestic_sales )
--- e internacionais ( international_sales ) de cada filme.
+/* 1.  Utilizando o INNER JOIN , encontre as vendas nacionais ( domestic_sales )
+e internacionais ( international_sales ) de cada filme. */
 SELECT 
     movies.title, Box.domestic_sales, Box.international_sales
 FROM

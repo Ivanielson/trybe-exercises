@@ -1,5 +1,5 @@
--- Utilizando o INNER JOIN , faça uma busca que retorne os filmes e sua avaliação
--- ( rating ) em ordem decrescente.
+/* Utilizando o INNER JOIN , faça uma busca que retorne os filmes e sua avaliação
+( rating ) em ordem decrescente. */
 SELECT 
     movies.title, box.rating
 FROM
