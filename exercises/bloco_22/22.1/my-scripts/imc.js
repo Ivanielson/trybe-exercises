@@ -1,8 +1,3 @@
-const readline = require('readline-sync');
+const imc = (height, weight) => Math.fround(weight / Math.pow(height, 2)).toFixed(2);
 
-const weight = readline.questionFloat('Qual seu peso? ');
-const height = readline.questionFloat('Qual sua altura? ');
-
-const imc = (weight, height) => Math.fround(weight / Math.pow(height, 2)).toFixed(2);
-
-console.log(imc(weight, height));
+console.log(imc(1.73, 94));

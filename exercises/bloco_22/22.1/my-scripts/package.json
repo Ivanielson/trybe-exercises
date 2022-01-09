@@ -13,8 +13,5 @@
     "massa_corporal"
   ],
   "author": "Ivanielson Cabral",
-  "license": "ISC",
-  "dependencies": {
-    "readline-sync": "^1.4.10"
-  }
+  "license": "ISC"
 }
