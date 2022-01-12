@@ -18,6 +18,11 @@ describe('Função que verifica o tipo de um Número', () => {
       const resposta = numberType(0);
       expect(resposta).to.be.equal('NEUTRO');
     });
+
+    it('É uma string, não um número', () => {
+      const resposta = numberType('5');
+      expect(resposta).to.be.equals('o valor deve ser um número');
+    });
   });
 
   describe('Quando não recebe um valor', () => {
