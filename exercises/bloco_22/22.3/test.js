@@ -19,4 +19,11 @@ describe('Função que verifica o tipo de um Número', () => {
       expect(resposta).to.be.equal('NEUTRO');
     });
   });
+
+  describe('Quando não recebe um valor', () => {
+    it('É undefined', () => {
+      const resposta = numberType();
+      expect(resposta).to.be.equals(undefined);
+    });
+  });
 });
