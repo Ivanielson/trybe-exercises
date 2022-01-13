@@ -1,13 +1,26 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const fs = require('fs');
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get('/ping', (req,res) => {
+const arraySimpsons = [];
+
+const readSimpsons = (arquivo) => {
+  try {
+    const simpsons = fs.readFileSync(arquivo, 'utf-8');
+    arraySimpsons.push(JSON.parse(simpsons));
+    return 200;
+  } catch (err) {
+    return 500;
+  }
+}
+
+app.get('/ping', (_req,res) => {
   res.status(200).json({ message: 'pong' });
 });
 
