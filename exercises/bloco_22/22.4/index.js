@@ -47,6 +47,15 @@ app.get('/simpsons', (_req, res) => {
   res.status(status).json(arraySimpsons[0]);
 });
 
+app.get('/simpsons/:id', (req,res) => {
+  const { id } = req.params;
+  readSimpsons('simpsons.json');
+
+  const simpsonID = arraySimpsons[0].find((s) => s.id === id);
+  if (!simpsonID) res.status(404).json({ message: 'simpson not found' });
+  res.status(200).json(simpsonID);
+});
+
 app.all('*', (req, res) => {
   res.status(404).json({ message: `Rota ${req.path} não existe!` });
 });
