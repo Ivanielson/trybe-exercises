@@ -41,6 +41,12 @@ app.put('/users/:name/:age', (req, res) => {
   res.status(200).json({ message: `Seu nome é ${name} e você tem ${age} anos de idade` });
 });
 
+app.get('/simpsons', (_req, res) => {
+  const status = readSimpsons('simpsons.json');
+  if (status === 500) res.status(status).json({ message: 'Internal Server Error' });
+  res.status(status).json(arraySimpsons[0]);
+});
+
 app.all('*', (req, res) => {
   res.status(404).json({ message: `Rota ${req.path} não existe!` });
 });
