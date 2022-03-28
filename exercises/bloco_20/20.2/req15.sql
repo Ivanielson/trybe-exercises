@@ -1,0 +1,1 @@
+SELECT CONCAT('Existem ', COUNT(`Name`), ' cientistas na tabela Scientists.') AS 'Qtd. de Cientistas' FROM Scientists.Scientists;

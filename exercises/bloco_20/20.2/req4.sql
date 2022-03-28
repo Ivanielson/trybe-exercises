@@ -1,0 +1,1 @@
+SELEct (5 * 4) + 2 AS 'Expressão Aritmética - Resultado';
