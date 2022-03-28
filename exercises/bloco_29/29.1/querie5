@@ -1,3 +1,0 @@
-1º - use biosDB
-
-2º - db.bios.find().limit(3).pretty();

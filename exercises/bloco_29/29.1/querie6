@@ -1,3 +1,0 @@
-1º - use biosDB
-
-2º - db.bios.find().skip(5).limit(2);
