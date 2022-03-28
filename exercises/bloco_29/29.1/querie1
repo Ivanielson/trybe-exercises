@@ -1,0 +1,4 @@
+1º - use biosDB
+
+2º - db.bios.find({ "_id": "8" });
+
