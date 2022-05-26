@@ -1,1 +1,1 @@
-Repositorio destinado a desenvolvimento de projetos para o curso de Desenvolvimento Web da trybe.
+Repositorio destinado a desenvolvimento de execícios no decorrer do curso de Desenvolvimento Web da trybe.
