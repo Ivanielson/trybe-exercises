@@ -1,11 +1,6 @@
 import random
 
 
-words = [
-    "carro", "passáro", "javascript", "python", "react", "desenvolvedor",
-]
-
-
 def guess_the_word(list_words):
     word_drawn = random.choice(list_words)
     scrambled_word = "".join(random.sample(word_drawn, len(word_drawn)))
@@ -18,4 +13,6 @@ def guess_the_word(list_words):
 
 
 if __name__ == "__main__":
+    with open("words.txt", "r") as file:
+        words = file.read().split()
     guess_the_word(words)
