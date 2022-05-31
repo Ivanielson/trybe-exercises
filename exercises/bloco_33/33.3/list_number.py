@@ -1,5 +1,5 @@
 def list_maker(num):
-    if type(num) == str:
+    if type(num) != int:
         raise TypeError("Invalid value, value is not an int")
     new_list = []
     for index in range(1, num + 1):
